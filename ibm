@@ -1,0 +1,40 @@
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+<input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <select data-conv-question="Hello {name}  How can I help you" name="category">
+        <option value="id">find land id</option>
+        <option value="imp">contact</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="id">
+          <input type="text" name="domainName" data-conv-question="sign in to find your land id">    
+        </div>
+        <div data-conv-case="imp" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="office Number : 0487 2351447"> 
+        </div>
+      </div>
+
+      
+   
+     
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
